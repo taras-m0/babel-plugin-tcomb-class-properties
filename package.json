@@ -1,0 +1,67 @@
+{
+  "name": "babel-plugin-tcomb-class-properties",
+  "version": "0.1.0",
+  "description": "Babel plugin make class property type using Flow and tcomb",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "eslint src",
+    "build": "babel -d ./lib ./src",
+    "test": "npm run lint && mocha --compilers js:@babel/register",
+    "benchmark": "babel-node benchmark"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gcanti/babel-plugin-tcomb-class-properties.git"
+  },
+  "author": "Taras M <taras.m0@yandex.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gcanti/babel-plugin-tcomb-class-properties/issues"
+  },
+  "homepage": "https://github.com/gcanti/babel-plugin-tcomb-class-properties",
+  "peerDependencies": {
+    "tcomb": "^3.2.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/node": "^7.4.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-syntax-async-generators": "^7.2.0",
+    "@babel/plugin-syntax-flow": "^7.2.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
+    "babel-eslint": "^10.0.1",
+    "benchmark": "^2.1.0",
+    "eslint": "2.9.0",
+    "mocha": "2.4.5",
+    "tcomb": "^3.0.0"
+  },
+  "tags": [
+    "flow",
+    "babel",
+    "babel-plugin",
+    "tcomb",
+    "type-checking",
+    "types",
+    "runtime"
+  ],
+  "keywords": [
+    "flow",
+    "babel",
+    "babel-plugin",
+    "tcomb",
+    "type-checking",
+    "types",
+    "runtime",
+    "class",
+    "property"
+  ],
+  "dependencies": {
+    "@babel/generator": "^7.4.4"
+  }
+}
