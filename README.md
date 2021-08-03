@@ -1,0 +1,1 @@
+# babel-plugin-tcomb-class-properties
